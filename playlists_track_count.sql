@@ -3,7 +3,7 @@
 -- Total number of tracks on each playlist
 
 SELECT 
-    Playlist.PlaylistId, Playlist.name, COUNT((Playlisttrack.TrackId))
+    Playlist.PlaylistId, Playlist.name, COUNT(Playlisttrack.TrackId)
 FROM 
     Playlist
     JOIN PlaylistTrack ON playlistTrack.playlistId=playlist.playlistid
